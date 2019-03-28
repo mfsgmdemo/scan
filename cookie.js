@@ -57,6 +57,22 @@ function isLocal() {
         return true
     }
 }
+
+function isUK() {
+  var value = docCookies.getItem('country')
+  return (value == undefined)
+}
+
+function isChina() {
+  var value = docCookies.getItem('country')
+  return (value == "cn")
+}
+
+function isUSA() {
+  var value = docCookies.getItem('country')
+  return (value == "us")
+}
+
 // =; expires=Thu, 01 Jan 1970 00:00:00 GMT
 function setCountry(country) {
     if (country == "en") {
