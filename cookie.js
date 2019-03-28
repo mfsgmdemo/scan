@@ -50,6 +50,7 @@ var docCookies = {
 
 function isLocal() {
     var value = docCookies.getItem('country')
+    console.log("country is " + value)
     if (value == "cn") {
         return false
     } else {
@@ -59,10 +60,10 @@ function isLocal() {
 // =; expires=Thu, 01 Jan 1970 00:00:00 GMT
 function setCountry(country) {
     if (country == "en") {
-        docCookies.removeItem("country")
+        docCookies.removeItem("country", "/")
         // document.cookie = "country=; expires=Thu, 01 Jan 1970 00:00:00 GMT"
     } else {
-        docCookies.setItem("country", country)
+        docCookies.setItem("country", country, null, "/")
         // document.cookie = "country="+country
     }
     
