@@ -75,7 +75,7 @@ function isUSA() {
 
 function isAustralia() {
   var value = docCookies.getItem('country')
-  return (value == "us")
+  return (value == "aus")
 }
 
 // =; expires=Thu, 01 Jan 1970 00:00:00 GMT
