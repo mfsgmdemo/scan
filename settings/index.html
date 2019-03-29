@@ -7,18 +7,6 @@ html, body {
     padding: 0;
 }
 
-body {
-   background: url("landing_bg.png") no-repeat center center fixed;
-   -webkit-background-size: 100%;
-   -moz-background-size: 100%;
-   -o-background-size: 100%;
-   background-size: 100%;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-}
-
 button {
     width: 300;
     height: 100;
@@ -26,21 +14,30 @@ button {
 }
 
 button {
-font-family: helvetica;
-color: #FFFFFF !important;
-font-size: 19px;
-padding: 15px 40px;
-background: #F8971D;
+    font-family: helvetica;
+    color: #FFFFFF !important;
+    font-size: 19px;
+    padding: 15px 40px;
+    background: #F8971D;
 }
 
 button:hover {
-color: #FFFFFF !important;
-background: #F0921C;
+    color: #FFFFFF !important;
+    background: #F0921C;
 }
 
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    /* max-height: 100%; */
+    max-width: 100%;
+}
 </style>
 <script src="../cookie.js"></script>
-<center>
+<center>    
+<img id="image_here" src="landing_bg.png" />
+<br />
 <button onclick="setCountry('en')">U.K</button><br />
 <button onclick="setCountry('cn')">China</button><br />
 <button onclick="setCountry('us')">U.S.A</button><br />
