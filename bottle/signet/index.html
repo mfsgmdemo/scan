@@ -24,8 +24,11 @@ img {
 var img = document.getElementById('image_here')
 if (isUK()) {
     img.src = "img/bg_en_cloudy.png"
+} else if (isAustralia()) {
+    img.src = "img/bg_aus.png"
 } else {
     img.src = "img/bg_cn.png"
+}
 }
 </script>
 </body>

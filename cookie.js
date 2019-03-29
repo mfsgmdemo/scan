@@ -73,6 +73,11 @@ function isUSA() {
   return (value == "us")
 }
 
+function isAustralia() {
+  var value = docCookies.getItem('country')
+  return (value == "us")
+}
+
 // =; expires=Thu, 01 Jan 1970 00:00:00 GMT
 function setCountry(country) {
     if (country == "en") {
